@@ -1,0 +1,30 @@
+people:
+    path:     /
+    defaults: { _controller: "ECEAuthBundle:People:index" }
+
+people_show:
+    path:     /{id}/show
+    defaults: { _controller: "ECEAuthBundle:People:show" }
+
+people_new:
+    path:     /new
+    defaults: { _controller: "ECEAuthBundle:People:new" }
+
+people_create:
+    path:     /create
+    defaults: { _controller: "ECEAuthBundle:People:create" }
+    requirements: { _method: post }
+
+people_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "ECEAuthBundle:People:edit" }
+
+people_update:
+    path:     /{id}/update
+    defaults: { _controller: "ECEAuthBundle:People:update" }
+    requirements: { _method: post|put }
+
+people_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "ECEAuthBundle:People:delete" }
+    requirements: { _method: post|delete }

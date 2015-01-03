@@ -1,0 +1,17 @@
+ece_auth_homepage:
+    path:     /
+    defaults: { _controller: ECEAuthBundle:Default:index }
+
+
+
+
+
+ece_auth_people:
+    resource: "@ECEAuthBundle/Resources/config/routing/people.yml"
+    prefix:   /people
+
+ece_auth_user:
+    resource: "@ECEAuthBundle/Resources/config/routing/user.yml"
+    prefix:   /user
+
+
